@@ -6,4 +6,4 @@ export interface MovieQueryParams {
     id: string;
 }
 
-export type QueryParams = SearchQueryParams | MovieQueryParams;
+export type QueryParams = SearchQueryParams | MovieQueryParams | null;

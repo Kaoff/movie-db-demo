@@ -1,6 +1,16 @@
-import { Movie } from "./movies";
+import { Media } from "./medias";
 
-export interface MovieSearchResult {
+export interface MediaSearch {
     page: number;
-    results: Movie[];
+    total_pages: number;
+    results: Media[];
 }
+
+export interface Configuration {
+    images: {
+        backdrop_sizes: string[];
+        base_url: string;
+    }
+}
+
+export type MovieApiResult = MediaSearch | Configuration;
